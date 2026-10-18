@@ -1,0 +1,674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="8dp">
+
+            <!-- Header -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BiD.ai"
+                        android:textColor="#0868E8"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Buy. Inspect. Deal"
+                        android:textColor="#555555"
+                        android:textSize="7sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="10dp"
+                    android:text="⌖  Taj Retreat, Bengaluru  ⌄"
+                    android:textColor="#555555"
+                    android:textSize="10sp"
+                    android:maxLines="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="♧  ♡  ▤  ◉"
+                    android:textColor="#222222"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <!-- Search -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="18dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingHorizontal="12dp"
+                android:background="@drawable/input_background">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⌕"
+                    android:textColor="#222222"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Search For Cars"
+                    android:textColor="#333333"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="▣"
+                    android:textColor="#333333"
+                    android:textSize="21sp" />
+            </LinearLayout>
+
+            <!-- Hero banner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="164dp"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="16dp"
+                android:background="@drawable/home_banner_background">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Find Your&#10;Dream job&#10;with&#10;BID.AI"
+                    android:textColor="#263238"
+                    android:textSize="23sp"
+                    android:fontFamily="serif"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="💼"
+                    android:textSize="58sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:text="● ● ● ● ● ●"
+                android:textColor="#CCCCCC"
+                android:textSize="13sp" />
+
+            <!-- Categories -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="#F6F6F6">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Explore Categories"
+                    android:textColor="#222222"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+                <GridLayout
+                    android:id="@+id/categoryGrid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="4"
+                    android:rowCount="4"
+                    android:alignmentMode="alignMargins"
+                    android:useDefaultMargins="true"
+                    android:layout_marginTop="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🚙&#10;Cars"
+                        android:textColor="#222222"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🏠&#10;Real Estate"
+                        android:textColor="#222222"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="📱&#10;Mobiles"
+                        android:textColor="#222222"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="💼&#10;Jobs"
+                        android:textColor="#222222"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🏍️&#10;Bikes"
+                        android:textColor="#222222"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="💻&#10;Electronics"
+                        android:textColor="#222222"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🪑&#10;Home &amp; Garden"
+                        android:textColor="#222222"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="👜&#10;Beauty"
+                        android:textColor="#222222"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="👕&#10;Clothing"
+                        android:textColor="#222222"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="📚&#10;Books"
+                        android:textColor="#222222"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🎨&#10;Arts and Crafts"
+                        android:textColor="#222222"
+                        android:textSize="9sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🛠️&#10;Services"
+                        android:textColor="#222222"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🌾&#10;Yodha"
+                        android:textColor="#222222"
+                        android:textSize="11sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="🚜&#10;Agriculture"
+                        android:textColor="#222222"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="82dp"
+                        android:layout_columnWeight="1"
+                        android:gravity="center"
+                        android:text="⚙️&#10;General Service"
+                        android:textColor="#222222"
+                        android:textSize="9sp" />
+                </GridLayout>
+            </LinearLayout>
+
+            <!-- Blue furniture banner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="#0868E8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="From Home to Market&#10;– List Furniture Fast&#10;with BID.ai"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🪑 🪑"
+                    android:textSize="27sp" />
+            </LinearLayout>
+
+            <!-- Cars -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Newly Listed Cars"
+                android:textColor="#222222"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Mahindra &amp; Mahindra  Tata Motors  Maruti Suzuki  Hyundai  Honda  Toyota"
+                android:textColor="#333333"
+                android:textSize="9sp" />
+
+            <LinearLayout
+                android:id="@+id/carsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Bikes -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Newly Listed Budget Bikes"
+                android:textColor="#222222"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="TVS Motor  Bajaj Auto  Royal Enfield  Yamaha  KTM"
+                android:textColor="#333333"
+                android:textSize="9sp" />
+
+            <LinearLayout
+                android:id="@+id/bikesContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Subscription banner -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="104dp"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="#1474EB">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Your Plan is About to Expire!"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:text="Renew now to keep listing and boosting your products without interruption"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Renew Plan  ↗"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="⌛"
+                    android:textSize="38sp" />
+            </LinearLayout>
+
+            <!-- Recommendations -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="14dp"
+                android:text="Recommendations For You"
+                android:textColor="#222222"
+                android:textStyle="bold"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:id="@+id/recommendationsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Sell benefits -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Sell and buy everything with BID.AI"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="#F1F2F5">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="🟦&#10;More than 13+ categories in BiD.ai"
+                    android:textColor="#222222"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="✨&#10;Sell your unused items in 30 seconds with One Click Sell"
+                    android:textColor="#222222"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="🎯&#10;Earn up to ₹1000000 in BiD.ai credit"
+                    android:textColor="#222222"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <!-- Property promotion -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="12dp"
+                android:background="#0868E8">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Turn Your Property into Profit – List in Just One Click!"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="🏠"
+                    android:textSize="42sp" />
+            </LinearLayout>
+
+            <!-- Testimonials -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="Transact with a trusted local community"
+                android:textColor="#222222"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="3dp"
+                    android:padding="7dp"
+                    android:background="@drawable/input_background"
+                    android:text="“&#10;I sold my cooler, sofa, and gym set using BID.ai. Now even my apartment group uses it to sell items.&#10;&#10;Neha A., Mumbai"
+                    android:textColor="#222222"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="1"
+                    android:layout_marginHorizontal="3dp"
+                    android:padding="7dp"
+                    android:background="@drawable/input_background"
+                    android:text="“&#10;I listed my bike on BID.ai just to try it out, and bought another one the same day!&#10;&#10;Ravi S., Pune"
+                    android:textColor="#222222"
+                    android:textSize="9sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="135dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="3dp"
+                    android:padding="7dp"
+                    android:background="@drawable/input_background"
+                    android:text="“&#10;As a working mom, I don't have time to haggle. BID.ai makes selling easier.&#10;&#10;Anjali, Delhi"
+                    android:textColor="#222222"
+                    android:textSize="9sp" />
+            </LinearLayout>
+
+            <!-- Invite friends -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="112dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="#0868E8">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Invite Friends"
+                        android:textColor="#FFFFFF"
+                        android:textStyle="bold"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Sign up using my referral code to earn up to 1 lakh BiD Credits!"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:text="Invite &amp; Earn  ↗"
+                        android:textColor="#FFFFFF"
+                        android:textSize="10sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="📣"
+                    android:textSize="40sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Bottom navigation: decorative, non-clickable -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/navHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="⌂&#10;Home"
+            android:textColor="#0868E8"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/navSell"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="♙&#10;Sell"
+            android:textColor="#333333"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/navOneClick"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="✧&#10;One click sell"
+            android:textColor="#333333"
+            android:textSize="9sp" />
+
+        <TextView
+            android:id="@+id/navChat"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="▤&#10;Chat"
+            android:textColor="#333333"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/navItems"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="▢&#10;Your items"
+            android:textColor="#333333"
+            android:textSize="9sp" />
+
+    </LinearLayout>
+
+</LinearLayout>

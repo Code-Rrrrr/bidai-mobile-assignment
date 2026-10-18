@@ -1,0 +1,6 @@
+.git-data/
+**/build/
+**/.gradle/
+**/node_modules/
+**/.env
+**/local.properties

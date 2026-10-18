@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="@drawable/input_background">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:background="#F1F3F6">
+
+        <TextView
+            android:id="@+id/productImagePlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="BiD.ai"
+            android:textColor="#0868E8"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|end"
+            android:text="♡"
+            android:textColor="#333333"
+            android:textSize="18sp" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="🔹 Verified Product"
+        android:textColor="#0868E8"
+        android:textSize="9sp" />
+
+    <TextView
+        android:id="@+id/productPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="₹ 25,000"
+        android:textColor="#111111"
+        android:textStyle="bold"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/productTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="Product title"
+        android:textColor="#222222"
+        android:textSize="11sp"
+        android:maxLines="2" />
+
+    <TextView
+        android:id="@+id/productBrand"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Brand"
+        android:textColor="#555555"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/productLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bengaluru"
+        android:textColor="#555555"
+        android:textSize="10sp" />
+
+</LinearLayout>
